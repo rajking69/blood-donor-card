@@ -16,8 +16,8 @@ export default function DonorForm({
 }: DonorFormProps) {
   const handleChange =
     (field: keyof DonorFormData) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
-      onChange(field, e.target.value);
+      (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
+        onChange(field, e.target.value);
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 space-y-6">
@@ -33,7 +33,7 @@ export default function DonorForm({
               className="input-field"
               value={form.name}
               onChange={handleChange("name")}
-              placeholder="Sheikh Mohammad Rajking"
+              placeholder="John Doe"
             />
           </div>
 
@@ -91,7 +91,7 @@ export default function DonorForm({
               className="input-field"
               value={form.address}
               onChange={handleChange("address")}
-              placeholder="Chattogram, Bangladesh"
+              placeholder="Dhaka, Bangladesh"
             />
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function DonorForm({
               type="number"
               value={form.totalDonations}
               onChange={handleChange("totalDonations")}
-              placeholder="3"
+              placeholder="0"
               min="0"
             />
           </div>
