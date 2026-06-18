@@ -41,31 +41,6 @@ npm start
 
 ---
 
-## 📂 Project Structure
-
-```
-app/
-├── page.tsx                  # Main page (form + preview layout)
-├── layout.tsx                # Root layout with metadata
-├── types.ts                  # Shared TypeScript types
-│
-├── components/
-│   ├── DonorForm.tsx         # Left-side input form
-│   ├── CardPreview.tsx       # Live card preview (the card UI)
-│   ├── PhotoUploader.tsx     # Photo upload component
-│   ├── QRGenerator.tsx       # QR code generator
-│   └── DownloadButton.tsx    # PNG / PDF export button
-│
-├── utils/
-│   ├── exportPNG.ts          # html-to-image PNG export
-│   └── exportPDF.ts          # jsPDF PDF export
-│
-└── styles/
-    └── globals.css           # Tailwind + Google Fonts + custom classes
-```
-
----
-
 ## 🛠 Tech Stack
 
 | Tool | Version |
